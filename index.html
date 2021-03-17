@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Page</title>
+    <link rel="stylesheet" href="style.css">
+    <title>JarredCodes - Survey</title>
 </head>
 <body>
     <main id="main">
         <header id="header">
-                    <h1 id="title">My Basic Survey Form</h1>
-                    <p id="description">This is an example of a basic survey page.</p>
+                    <h1 id="title">JarredCodes Feedback Survey</h1>
+                    <p id="description">Please leave feedback for my services at <a href="https://www.jarredcodes.com/">JarredCodes</a>.</p>
         </header>
         <form id="survey-form">
             <label id="name-label" for="name">Name</label>
@@ -20,9 +21,44 @@
                 placeholder="Enter your name"
                 required
                 />
-                <input type="text"
-                    
+            <label id="email-label" for="email">Email</label>
+            <input type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+                />
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number"
+                name="number"
+                id="number"
+                placeholder="Enter your age"
+                min="13"
+                max="100"
+                />
+            <label id="role-label" for="dropdown">What role did you use JarredCodes for?</label>
+            <select id="dropdown" name="role">
+                <option disabled selected value>Select your role</option>
+                <option value="student">Business</option>
+                <option value="teacher">Personal</option>
+            </select>
+            <p>Would you recommend JarredCodes to a friend or colleague?</p>
+            <input type="radio" id="yes" name="recommendation" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="recommendation" value="no">
+            <label for="no">No</label>
+            <p>What can JarredCodes improve on?</p>
+            <input type="checkbox" id="pricing" name="improvement" value="pricing">
+            <label for="pricing">Pricing</label>
+            <input type="checkbox" id="customer-service" name="improvement" value="customer-service">
+            <label for="customer-service">Customer Service</label>
+            <input type="checkbox" id="development-time" name="improvement" value="development-time">
+            <label for="development-time">Development Time</label>
+            <label for="comments">Additional comments</label>
+            <textarea id="comments" name="comments" rows="5" cols="50" style="resize: none;">Enter additional comments here...</textarea>
+            <button id="submit">Submit</button>
         </form>
     </main>
 </body>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </html>
