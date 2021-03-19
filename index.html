@@ -8,65 +8,67 @@
     <title>JarredCodes - Survey</title>
 </head>
 <body>
-    <main id="main">
-        <header id="header">
-            <h1 id="title">JarredCodes Feedback Survey</h1>
-            <p id="description">Please leave feedback for <a href="https://www.jarredcodes.com/">JarredCodes</a>.</p>
-        </header>
-        <form id="survey-form">
-            <div class="form-group">
-                <label id="name-label" for="name">Name</label>
-                <input type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Enter your name"
-                    required />
-            </div>
-            <div class="form-group">
-                <label id="email-label" for="email">Email</label>
-                <input type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required />
-            </div>
-            <div class="form-group">
-                <label id="number-label" for="number">Age (optional)</label>
-                <input type="number"
-                    name="number"
-                    id="number"
-                    placeholder="Enter your age"
-                    min="13"
-                    max="100" />
-            </div>
-            <div class="form-group">
-                <label id="role-label" for="dropdown">What role did you use JarredCodes for?</label>
-                <select id="dropdown" name="role">
-                    <option disabled selected value>Select your role</option>
-                    <option value="student">Business</option>
-                    <option value="teacher">Personal</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <p>Would you recommend JarredCodes to a friend or colleague?</p>
-                <label><input type="radio" id="yes" name="recommendation" value="yes">Yes</label>
-                <label><input type="radio" id="no" name="recommendation" value="no">No</label>
-            </div>
-            <div class="form-group">
-                <p>What can JarredCodes improve on?</p>
-                <label><input type="checkbox" id="pricing" name="improvement" value="pricing">Pricing</label>
-                <label><input type="checkbox" id="customer-service" name="improvement" value="customer-service">Customer Service</label>
-                <label><input type="checkbox" id="development-time" name="improvement" value="development-time">Development Time</label>
-            </div>
-            <div class="form-group">
-                <p>Additional comments</p>
-                <textarea id="comments" name="comments" rows="5" cols="50" style="resize: none;">Enter additional comments here...</textarea>
-            </div>
-            <div class="form-group">
-                <button id="submit">Submit</button>
-            </div>
-        </form>
-    </main>
+    <div class="content">
+        <main id="main">
+            <header id="header">
+                <h1 id="title" class="center-text">JarredCodes Feedback Survey</h1>
+                <p id="description" class="center-text"><em>Please leave feedback for <a href="https://www.jarredcodes.com/">JarredCodes</em></a>.</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter your name"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age (optional)</label>
+                    <input type="number"
+                        name="number"
+                        id="number"
+                        placeholder="Enter your age"
+                        min="13"
+                        max="100" />
+                </div>
+                <div class="form-group">
+                    <label id="role-label" for="dropdown">What role did you use JarredCodes for?</label>
+                    <select id="dropdown" name="role">
+                        <option disabled selected value>Select your role</option>
+                        <option value="student">Business</option>
+                        <option value="teacher">Personal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend JarredCodes to a friend or colleague?</p>
+                    <label><input type="radio" id="yes" name="recommendation" value="yes">Yes</label>
+                    <label><input type="radio" id="no" name="recommendation" value="no">No</label>
+                </div>
+                <div class="form-group">
+                    <p>What can JarredCodes improve on?</p>
+                    <label><input type="checkbox" id="pricing" name="improvement" value="pricing">Pricing</label>
+                    <label><input type="checkbox" id="customer-service" name="improvement" value="customer-service">Customer Service</label>
+                    <label><input type="checkbox" id="development-time" name="improvement" value="development-time">Development Time</label>
+                </div>
+                <div class="form-group">
+                    <p>Additional comments</p>
+                    <textarea id="comments" name="comments" rows="5" cols="50" style="resize: none;">Enter additional comments here...</textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div> 
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
